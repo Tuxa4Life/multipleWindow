@@ -48,6 +48,4 @@ setInterval(() => {
     setDotPosition()
 }, 5)
 
-window.addEventListener('beforeunload', () => {
-    localStorage.clear()
-})
+setInterval(() => localStorage.clear(), 1500)
