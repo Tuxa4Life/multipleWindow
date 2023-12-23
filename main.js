@@ -1,14 +1,11 @@
 let windowId = Math.random().toString(36).slice(2, 9);
 
 let data = {
-    width: window.outerWidth,
-    height: window.outerHeight,
+    width: null,
+    height: null,
 
-    x: window.screenX || window.screenLeft,
-    y: window.screenY || window.screenTop,
-
-    screenWidth: window.screen.availWidth,
-    screenHeight: window.screen.availHeight,
+    x: null,
+    y: null,
 }
 
 let setPos = () => {
